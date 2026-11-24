@@ -6,6 +6,13 @@ export default function Settings() {
       <div className="card">
         <div className="setting">
           <div>
+            <strong>Streak freeze</strong>
+            <p>Miss a day without losing your streak. 2 left this month</p>
+          </div>
+          <span className="toggle" />
+        </div>
+        <div className="setting">
+          <div>
             <strong>Daily reminder</strong>
             <p>A nudge at 8:00 every morning</p>
           </div>
