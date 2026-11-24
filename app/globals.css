@@ -23,3 +23,9 @@ h1 { font-size: 32px; margin: 0 0 6px; }
 .toggle.off { background: #d9d2f5; }
 .toggle.off::after { right: auto; left: 3px; }
 .big { font-size: 64px; font-weight: 800; color: var(--primary); margin: 8px 0; }
+.week { background: #fff; border-radius: 16px; padding: 16px 18px; margin-bottom: 16px; display: flex; flex-direction: column; gap: 12px; }
+.week-head { display: flex; justify-content: space-between; align-items: baseline; }
+.week-head span { color: var(--muted); font-weight: 600; }
+.week-days { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; }
+.day { display: grid; place-items: center; height: 36px; border-radius: 10px; background: var(--surface); color: var(--muted); font-weight: 700; }
+.day.on { background: var(--primary); color: #fff; }
