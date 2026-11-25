@@ -33,6 +33,7 @@ export default function Settings() {
             content: (
               <div className="card">
                 <Setting name="Streak freeze" detail="Miss a day without losing your streak. 2 left this month" />
+                <Setting name="Weekend pass" detail="Rest on Saturdays and Sundays without breaking your streak" on={false} />
               </div>
             ),
           },
