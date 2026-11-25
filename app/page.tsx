@@ -3,10 +3,15 @@ import { habits } from "./habits";
 
 export default function Today() {
   const done = habits.filter((h) => h.doneToday).length;
+  const pct = Math.round((done / habits.length) * 100);
   return (
     <main>
       <h1>Today</h1>
       <p className="sub">{done} of {habits.length} habits done</p>
+      <div className="progress" role="progressbar" aria-label="Today's progress" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100}>
+        <div className="progress-fill" style={{ width: `${pct}%` }} />
+        <span className="progress-label">{pct}%</span>
+      </div>
       <section className="week" aria-label="This week">
         <div className="week-head">
           <strong>This week</strong>

@@ -37,3 +37,6 @@ h1 { font-size: 32px; margin: 0 0 6px; }
 .tabs { display: flex; gap: 8px; margin-bottom: 16px; }
 .tab { font: inherit; font-weight: 700; padding: 8px 14px; border-radius: 999px; border: 0; background: #fff; color: var(--muted); cursor: pointer; }
 .tab[aria-selected="true"] { background: var(--primary); color: #fff; }
+.progress { position: relative; height: 28px; background: #fff; border-radius: 999px; overflow: hidden; margin: -8px 0 24px; box-shadow: 0 1px 0 #e4defa; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, var(--primary), #9b82ff); border-radius: 999px; }
+.progress-label { position: absolute; inset: 0 14px 0 0; display: grid; place-items: center end; font-weight: 700; font-size: 14px; color: var(--ink); }
